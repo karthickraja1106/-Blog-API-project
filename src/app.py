@@ -16,6 +16,10 @@ posts=[
        "author": "Abinesh"
        }
 ]
+#home
+@app.route("/")
+def home():
+      return "welcome"
 
 #Get
 @app.route("/posts",methods=["GET"])
